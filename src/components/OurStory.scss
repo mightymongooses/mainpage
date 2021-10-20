@@ -1,0 +1,23 @@
+.our-story {
+	padding: 4.5rem 0 3.5rem;
+	background-image: url('./images/story-bg.png');
+	background-size: 100%, contain;
+	background-repeat: no-repeat;
+
+	&-header {
+		margin-bottom: 50px;
+		h2 {
+			line-height: 1;
+			font-size: 3.0rem;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+		h3 {
+			color: #ff5254;
+			line-height: 1;
+			font-size: 4rem;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+}

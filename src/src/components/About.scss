@@ -1,0 +1,30 @@
+.about {
+	min-height: 100vh;
+	background-image: url('./images/about-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 4.5rem 0 0;
+	position: relative;
+
+	@media (max-width: 767px) {
+		padding: 1.5rem 0 0;
+	}
+
+	&-left-image {
+		object-fit: cover;
+		max-width: 100%;
+		@media (min-width: 768px) {
+			position: relative;
+			bottom: -70px;
+		}
+	}
+
+	&-caption {
+		img {
+			object-fit: cover;
+			width: 70%;
+		}
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,75 @@
+.faq {
+	background: url('./images/faq-bg.png') #fff9f3;
+	background-position: bottom right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 4.5rem 0 5rem;
+
+	&-header {
+		// padding-top: 2rem;
+		margin-bottom: 50px;
+		h2 {
+			font-size: 4rem;
+			font-weight: bold;
+		}
+		h3 {
+			color: #ff5254;
+			font-weight: bold;
+			font-size: 4rem;
+		}
+	}
+
+	&-card {
+		background-image: linear-gradient(to right bottom, #fe7dc3, #ff63a2, #ff487c, #fa2e52, #eb1d25);
+		color: white;
+		border-radius: 6px;
+		font-size: 1rem;
+		margin-bottom: 40px;
+
+		&-header {
+			padding: 2rem 2rem 0;
+		}
+		&-body {
+			padding: 2rem;
+
+			.faq-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				.faq-item {
+					word-break: break-all;
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		&-item {
+			h6 {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.accordion {
+		&-button {
+			background-color: transparent !important;
+			outline: none;
+			box-shadow: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.2rem;
+			color: #eb1d25;
+		}
+		&-item {
+			background-color: transparent;
+		}
+	}
+}

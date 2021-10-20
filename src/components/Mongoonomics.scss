@@ -1,0 +1,105 @@
+.mongono {
+	min-height: 100vh;
+	background-image: url('./images/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	@media (max-width: 991px) {
+		min-height: auto;
+		padding: 2rem 0;
+	}
+
+	&-inner {
+		width: 100%;
+		height: 100%;
+		background: url('./images/lady.png') center right 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+	}
+	&-container {
+		position: relative;
+	}
+	.btn-mongono {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		color: white;
+		border-color: #ff0698;
+		background-image: linear-gradient(to right, #ff0698, #ff3d6e, #ff7545, #ffa918, #ffd800);
+
+		@media (max-width: 767px) {
+			top: 0;
+			right: 50%;
+			transform: translateX(50%);
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+	}
+
+	&-header {
+		margin-top: 4.5rem;
+		margin-bottom: 45px;
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+		h2 {
+			font-size: 2.5rem;
+			font-weight: bold;
+			line-height: 1;
+			.secondary {
+				color: #ff5254;
+			}
+		}
+	}
+
+	.list {
+		list-style: none;
+		margin: 0 0 1rem;
+		padding: 0;
+
+		&-item {
+			color: white;
+			padding: 0.5rem 0.8rem;
+			border-radius: 0 6px 6px 0;
+			font-size: 1.1rem;
+			display: flex;
+			justify-content: space-between;
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+			
+			&:nth-child(1) {
+				background-image: linear-gradient(to right, #f17eff, #d86cfb, #bb5cf8, #9b4df5, #7341f2);
+			}
+			&:nth-child(2) {
+				background-image: linear-gradient(to right, #a5c363, #77ca83, #41cca9, #00cbcd, #00c7e8);
+			}
+			&:nth-child(3) {
+				background-image: linear-gradient(to right, #eae536, #f5cf2a, #fcb929, #ffa42f, #ff8e39);
+			}
+			&:nth-child(4) {
+				background-image: linear-gradient(to right, #af62a1, #c85996, #de5184, #ee4c6c, #f74f4f);
+			}
+			&:nth-child(5) {
+				background-image: linear-gradient(to right, #ff0698, #ff3d6e, #ff7545, #ffa918, #ffd800);
+			}
+			&:nth-child(6) {
+				background-image: linear-gradient(to right, #00f0ff, #00cfff, #00abfb, #0085ea, #355bcb);
+			}
+			&:nth-child(7) {
+				background-image: linear-gradient(to right, #aeff00, #8bdf04, #6bc005, #4ca203, #2f8400);
+			}
+			&:nth-child(8) {
+				background-image: linear-gradient(to right, #ffb400, #ff822e, #ff3568, #ff00af, #f600ff);
+			}
+		}
+	}
+}
